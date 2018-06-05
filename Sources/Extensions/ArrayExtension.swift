@@ -10,7 +10,8 @@ extension Array {
     ///
     /// - Returns: A random element from the array or `nil` if empty.
     public var sample: Element? {
-        guard let randomIndex = Int(randomBelow: count) else { return nil }
+        guard !isEmpty else { return nil }
+        let randomIndex = Int.random(in: 0..<count)
         return self[randomIndex]
     }
 

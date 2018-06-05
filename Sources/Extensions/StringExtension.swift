@@ -41,7 +41,7 @@ extension String {
     ///
     /// - Returns: A random character from the String or `nil` if empty.
     public var sample: Character? {
-        return isEmpty ? nil : self[index(startIndex, offsetBy: Int(randomBelow: count)!)]
+        return isEmpty ? nil : self[index(startIndex, offsetBy: Int.random(in: 0..<count))]
     }
 
     /// Returns a given number of random characters from the String.
