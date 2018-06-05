@@ -70,6 +70,6 @@ extension String {
         case numeric
         case alphabetic
         case alphaNumeric
-        case allCharactersIn(String)
+        case allCharactersIn(String) // swiftlint:disable:this identifier_name
     }
 }
